@@ -1,0 +1,110 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: magenta;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: white;
+display: block;
+transition: 0,3s;
+}
+.sidenav a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+*,*:before, *:after{
+    box-sizing: border-box;
+}
+.card-column{
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+    @media screen and (max-width:650px) {
+        .card-column{
+            width: 100%;
+            display: block;
+        }
+    }
+    .card-row {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    .container {
+        padding: 0 16px;
+    }
+
+    .container::after, .card-row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+.order {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: whitesmoke;
+    background-color: magenta;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.order:hover{
+    background-color: rgba(236, 94,  236);
+    color: whitesmoke;
+}
+/*this is for slideshow css: line 79-117*/
+.myslides {
+    display: none;
+}
+img{
+    vertical-align: middle;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 15%;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active{
+    background-color: #532140;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
